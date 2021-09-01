@@ -12,7 +12,6 @@ abstract class Parser
      *
      * @var array
      */
-    private static $cache = array();
 
     /**
      * Returns the parser name.
@@ -211,7 +210,7 @@ abstract class Parser
      *
      * @return array[string]
      */
-    final private static function getDirectoryStructureDo($relativePath, $rootDirectory, $exclude3rdParty)
+    private static function getDirectoryStructureDo($relativePath, $rootDirectory, $exclude3rdParty)
     {
         $thisRoot = $rootDirectory;
         if ($relativePath !== '') {
