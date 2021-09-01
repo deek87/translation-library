@@ -245,6 +245,7 @@ class Cif extends \C5TL\Parser
             case '/concrete5-cif/stacks/stack/area/blocks/block':
             case '/concrete5-cif/summarytemplates/template/categories':
             case '/concrete5-cif/summarytemplates/template/fields':
+            case '/styles/webfonts':
                 // Skip this node and its children
                 return;
             case '/concrete5-cif/pages/page/area/block':
