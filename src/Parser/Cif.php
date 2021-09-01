@@ -256,7 +256,6 @@ class Cif extends \C5TL\Parser
             case '/concrete5-cif/stacks/stack/area':
             case '/concrete5-cif/stacks/stack/area/block':
             case '/concrete5-cif/systemcaptcha/library':
-            case '/concrete5-cif/tasksets/taskset':
             case '/concrete5-cif/workflowtypes/workflowtype':
                 static::readXmlNodeAttribute($translations, $filenameRel, $node, 'name');
                 break;
@@ -271,6 +270,9 @@ class Cif extends \C5TL\Parser
                 break;
             case '/concrete5-cif/attributekeys/attributekey/tree':
                 static::readXmlNodeAttribute($translations, $filenameRel, $node, 'name', 'TreeName');
+                break;
+            case '/concrete5-cif/tasksets/taskset':
+                static::readXmlNodeAttribute($translations, $filenameRel, $node, 'name', 'TaskSetName');
                 break;
             case '/concrete5-cif/thumbnailtypes/thumbnailtype':
                 static::readXmlNodeAttribute($translations, $filenameRel, $node, 'name', 'ThumbnailTypeName');
